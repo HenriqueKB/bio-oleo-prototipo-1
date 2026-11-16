@@ -3,7 +3,7 @@ import { BrowserRouter, Link, Navigate, Route, Routes, useNavigate } from 'react
 import logoBioOleo from './assets/logoBiooleo.png'
 import './App.css'
 
-const API_BASE = 'http://localhost:5000/api'
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 const AUTH_TOKEN_KEY = 'biooleoAuthToken'
 const AUTH_USER_KEY = 'biooleoAuthUser'
 
